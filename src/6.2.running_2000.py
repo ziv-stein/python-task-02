@@ -2,6 +2,8 @@
 
 import time
 
+GREETING = "Hi {name}"
+
 
 def running_2000(func, *args, **kwargs) -> float:
     """Returns the run time of func in seconds."""
@@ -13,4 +15,4 @@ def running_2000(func, *args, **kwargs) -> float:
 if __name__ == "__main__":
     print(running_2000(print, "Hello"))
     print(running_2000(zip, [1, 2, 3], [4, 5, 6]))
-    print(running_2000("Hi {name}".format, name="Bug"))
+    print(running_2000(GREETING.format, name="Bug"))

@@ -1,3 +1,5 @@
+"""Decodes a message hidden in the black pixels of an image."""
+
 from PIL import Image  # pylint: disable=import-error
 
 IMAGE_PATH = "resources/code.png"

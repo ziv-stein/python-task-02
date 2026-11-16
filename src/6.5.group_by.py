@@ -2,7 +2,7 @@
 
 
 def group_by(func, iterable):
-
+    """Groups the items of an iterable by the result of func."""
     groups = {}
     for item in iterable:
         key = func(item)
